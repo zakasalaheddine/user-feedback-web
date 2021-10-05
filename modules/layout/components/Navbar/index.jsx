@@ -14,8 +14,9 @@ export default function Navbar() {
         display="flex"
         alignItems="center"
         justifyContent="space-between"
-        w={['540px', '720px', '960px', '1300px']}
+        w={['full', '720px', '960px', '1300px']}
         mx="auto"
+        px="2"
       >
         <Logo />
         <Box>
