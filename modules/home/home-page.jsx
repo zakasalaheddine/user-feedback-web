@@ -12,7 +12,7 @@ const StoresData = [
   { name: 'DERBGHALLAF', responsesCount: 95 },
   { name: 'DERBGHALLAF', responsesCount: 95 },
   { name: 'DERBGHALLAF', responsesCount: 95 },
-  { name: 'DERBGHALLAF', responsesCount: 95 },
+  { name: 'DERBGHALLAF', responsesCount: 95 }
 ]
 
 export default function HomePage() {
@@ -25,8 +25,12 @@ export default function HomePage() {
         </PageTitle>
         <StoresContainer>
           <AddStoreButton />
-          {StoresData.map((store) => (
-            <StoreCard name={store.name} count={store.responsesCount} />
+          {StoresData.map((store, idx) => (
+            <StoreCard
+              key={idx}
+              name={store.name}
+              count={store.responsesCount}
+            />
           ))}
         </StoresContainer>
       </Box>
