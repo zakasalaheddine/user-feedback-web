@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import Sidebar from './components/sidebar'
 import { PageTitle } from './styled-elements'
 
-export default function DashboardLayout({ pageTitle, children }) {
+export default function DashboardLayout({ pageTitle, sidebar, children }) {
   return (
     <>
       <Navbar />
@@ -12,7 +12,7 @@ export default function DashboardLayout({ pageTitle, children }) {
           {pageTitle}
         </PageTitle>
         <Box display="flex" flexWrap="wrap">
-          <Sidebar />
+          {sidebar}
           <Box flex="1" p="2">{children}</Box>
         </Box>
       </Box>
