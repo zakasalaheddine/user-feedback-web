@@ -5,7 +5,7 @@ import SidebarButton from './sidebar-button'
 
 export default function Sidebar() {
   return (
-    <Box width={['full', '16.66666667%']} flex={['auto', '0 0 16.66666667%']}>
+    <Box width={['full', '164px']} flex={['auto', '0 0 164px']}>
       <SidebarButton text="Statistics" buttonIcon={GoDashboard} isActive />
       <SidebarButton text="Editor" buttonIcon={FaEdit} />
       <SidebarButton text="Responses" buttonIcon={FaComments} />
